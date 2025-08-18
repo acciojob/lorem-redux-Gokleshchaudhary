@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --no-color 2>output.txt",
-    "start": "set PORT=3000 && react-scripts start",
-    "build": "webpack --mode production",
-    "cy:run": "start-server-and-test start http://localhost:3000 cypress open"
+    "start": "webpack-dev-server --mode development --watch --open --hot",
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "",
